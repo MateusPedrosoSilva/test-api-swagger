@@ -4,7 +4,11 @@ import {
   Column,
   CreateDateColumn,
   UpdateDateColumn,
+  OneToMany,
 } from "typeorm";
+
+import { Post } from "./post";
+import { Comment } from "./comment";
 
 @Entity()
 export class User {
@@ -19,6 +23,12 @@ export class User {
 
   @Column()
   email!: String;
+
+  @OneToMany((_type) => Post, (post: Post) => post.user)
+  posts!: Array<Post>;
+
+  @OneToMany((_type) => Comment, (comment: Comment) => comment.user)
+  comments!: Array<Comment>;
 
   @CreateDateColumn()
   createdAt!: Date;
