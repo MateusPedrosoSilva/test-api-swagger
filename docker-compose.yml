@@ -3,7 +3,7 @@ version: "3"
 services:
   db:
     image: postgres:12
-    environment: 
+    environment:
       - POSTGRES_DB=express-ts
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
@@ -13,11 +13,11 @@ services:
       dockerfile: Dockerfile.dev
     volumes:
       - ./src:/app/src
-    ports: 
+    ports:
       - "8000:8000"
-    depends_on: 
+    depends_on:
       - db
-    environment: 
+    environment:
       - POSTGRES_DB=express-ts
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
