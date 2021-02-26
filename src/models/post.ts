@@ -8,6 +8,7 @@ import {
   UpdateDateColumn,
   JoinColumn,
 } from "typeorm";
+
 import { User } from "./user";
 import { Comment } from "./comment";
 
