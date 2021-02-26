@@ -1,18 +1,18 @@
 # API com Swagger
 
-Testes para desenvolvimento de uma API com geração de documentação Swagger.  
+Testes para desenvolvimento de uma API com geração de documentação Swagger.
 
-Próximos passos:  
+Próximos passos:
 
 1. Adicionar Docker ☑️
-2. Adicionar TypeORM
+2. Adicionar TypeORM ☑️
 
 ## Tecnologias utilizadas
 
-- NodeJS
-  - Express
-- Docker
-- Swagger
-- TypeScript
-- TypeORM
-- Postgresql
+* NodeJS
+  + Express
+* Docker
+* Swagger
+* TypeScript
+* TypeORM
+* Postgresql

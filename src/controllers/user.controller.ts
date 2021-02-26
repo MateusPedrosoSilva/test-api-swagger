@@ -5,7 +5,7 @@ import {
   getUser,
   getUsers,
   IUserPayload,
-} from "../repositories/user";
+} from "../repositories/user.repository";
 
 @Route("users")
 @Tags("user")
